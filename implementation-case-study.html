@@ -1,1 +1,982 @@
 
+<!DOCTYPE HTML>
+<!--
+    Escape Velocity by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license
+-->
+<html>
+<head>
+    <title>Unity × Wwise — Case Study | Fahed Zaher</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+<div id="page-wrapper">
+
+    <!-- Header -->
+    <section id="header" class="wrapper">
+
+        <div id="logo">
+            <h1><a href="index.html">FAHED ZAHER</a></h1>
+            <p>Game Audio · Sound Design · Music</p>
+        </div>
+
+        <!-- Navigation -->
+        <nav id="nav">
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="implementation.html">Implementation</a>
+                </li>
+
+                <li>
+                    <a href="music.html">Music</a>
+                </li>
+
+                <li>
+                    <a href="sound-design.html">Sound Design</a>
+                </li>
+
+                <li>
+                    <a href="index.html#about">About</a>
+                </li>
+
+                <li>
+                    <a href="index.html#contact">Contact</a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </section>
+
+
+    <!-- Case Study Header -->
+    <section class="wrapper style3">
+
+        <div class="title">
+            Case Study
+        </div>
+
+        <div class="container">
+
+            <header class="style1">
+
+                <h2>
+                    Unity × Wwise
+                </h2>
+
+                <p>
+                    Interactive Game Audio Implementation
+                </p>
+
+            </header>
+
+
+            <a href="#" class="image featured">
+                <img
+                    src="images/pic05.jpg"
+                    alt="Unity and Wwise audio implementation"
+                />
+            </a>
+
+
+            <p>
+                This project explores the implementation of interactive game audio
+                using <strong>Wwise</strong> and <strong>Unity</strong>.
+            </p>
+
+            <p>
+                The goal was to build an audio system that responds dynamically
+                to player actions, enemies, environments and gameplay states rather
+                than simply playing isolated sound effects.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Project Overview -->
+    <section class="wrapper style1">
+
+        <div class="title">
+            Overview
+        </div>
+
+        <div class="container">
+
+            <header class="style1">
+
+                <h2>
+                    Building Audio Around Gameplay
+                </h2>
+
+            </header>
+
+            <p>
+                The implementation was built around the idea that audio should
+                communicate what is happening in the game while also contributing
+                to the atmosphere of the world.
+            </p>
+
+            <p>
+                The project combines interactive music, environmental ambience,
+                spatial audio, enemy audio, UI feedback and gameplay-driven
+                events into a single Wwise-powered audio system.
+            </p>
+
+
+            <div class="row">
+
+                <div class="col-4 col-12-medium">
+
+                    <section class="highlight">
+
+                        <h3>Engine</h3>
+
+                        <p>
+                            Unity
+                        </p>
+
+                    </section>
+
+                </div>
+
+
+                <div class="col-4 col-12-medium">
+
+                    <section class="highlight">
+
+                        <h3>Middleware</h3>
+
+                        <p>
+                            Wwise
+                        </p>
+
+                    </section>
+
+                </div>
+
+
+                <div class="col-4 col-12-medium">
+
+                    <section class="highlight">
+
+                        <h3>Focus</h3>
+
+                        <p>
+                            Interactive Audio
+                        </p>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Interactive Music -->
+    <section class="wrapper style2">
+
+        <div class="title">
+            Interactive Music
+        </div>
+
+        <div class="container">
+
+            <header class="style1">
+
+                <h2>
+                    Exploration &amp; Combat
+                </h2>
+
+                <p>
+                    Music that responds to the state of the gameplay.
+                </p>
+
+            </header>
+
+
+            <p>
+                The music system was designed around two primary gameplay states:
+                <strong>exploration</strong> and <strong>combat</strong>.
+            </p>
+
+            <p>
+                Wwise states are used to control which musical behavior is active,
+                allowing the music to transition when the player enters or exits
+                combat.
+            </p>
+
+
+            <div class="row">
+
+                <div class="col-6 col-12-medium">
+
+                    <section>
+
+                        <h3 class="icon solid fa-music">
+                            Exploration
+                        </h3>
+
+                        <p>
+                            The exploration state provides the default musical
+                            atmosphere while the player moves through the level.
+                        </p>
+
+                    </section>
+
+                </div>
+
+
+                <div class="col-6 col-12-medium">
+
+                    <section>
+
+                        <h3 class="icon solid fa-bolt">
+                            Combat
+                        </h3>
+
+                        <p>
+                            Enemy detection switches the music into a combat state,
+                            increasing tension and communicating the change in
+                            gameplay.
+                        </p>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+
+            <p>
+                Transition rules were also configured to make the change between
+                states feel musical rather than abrupt.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Spatial Audio -->
+    <section class="wrapper style3">
+
+        <div class="title">
+            Spatial Audio
+        </div>
+
+        <div class="container">
+
+            <header class="style1">
+
+                <h2>
+                    Rooms, Portals &amp; Reverb
+                </h2>
+
+                <p>
+                    Creating a world where location affects how sound is perceived.
+                </p>
+
+            </header>
+
+
+            <p>
+                Spatial audio was implemented using Wwise's environmental
+                audio systems to create different acoustic spaces throughout
+                the level.
+            </p>
+
+
+            <div class="feature-list">
+
+                <div class="row">
+
+                    <div class="col-6 col-12-medium">
+
+                        <section>
+
+                            <h3 class="icon solid fa-door-open">
+                                Rooms
+                            </h3>
+
+                            <p>
+                                Different areas of the level were treated as
+                                separate acoustic spaces.
+                            </p>
+
+                        </section>
+
+                    </div>
+
+
+                    <div class="col-6 col-12-medium">
+
+                        <section>
+
+                            <h3 class="icon solid fa-project-diagram">
+                                Portals
+                            </h3>
+
+                            <p>
+                                Portals allow audio to travel between connected
+                                spaces and help create a more believable
+                                transition between rooms.
+                            </p>
+
+                        </section>
+
+                    </div>
+
+
+                    <div class="col-6 col-12-medium">
+
+                        <section>
+
+                            <h3 class="icon solid fa-wave-square">
+                                Reverb
+                            </h3>
+
+                            <p>
+                                Environmental reverb was used to differentiate
+                                spaces and reinforce their physical characteristics.
+                            </p>
+
+                        </section>
+
+                    </div>
+
+
+                    <div class="col-6 col-12-medium">
+
+                        <section>
+
+                            <h3 class="icon solid fa-bullseye">
+                                Attenuation
+                            </h3>
+
+                            <p>
+                                3D attenuation controls how sounds change with
+                                distance from the listener.
+                            </p>
+
+                        </section>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Environmental Audio -->
+    <section class="wrapper style1">
+
+        <div class="title">
+            Environment
+        </div>
+
+        <div class="container">
+
+            <header class="style1">
+
+                <h2>
+                    Building the Soundscape
+                </h2>
+
+                <p>
+                    Ambient systems designed to make the environment feel alive.
+                </p>
+
+            </header>
+
+
+            <p>
+                Environmental audio was built from multiple layers rather than
+                relying on a single looping ambience. Different sounds were
+                positioned and controlled to create a more dynamic soundscape.
+            </p>
+
+
+            <div class="row">
+
+                <div class="col-4 col-12-medium">
+
+                    <section class="highlight">
+
+                        <h3>Water</h3>
+
+                        <p>
+                            Environmental water sounds were positioned in the
+                            world using 3D audio.
+                        </p>
+
+                    </section>
+
+                </div>
+
+
+                <div class="col-4 col-12-medium">
+
+                    <section class="highlight">
+
+                        <h3>Ambience</h3>
+
+                        <p>
+                            Ambient layers help establish the atmosphere of
+                            different areas of the level.
+                        </p>
+
+                    </section>
+
+                </div>
+
+
+                <div class="col-4 col-12-medium">
+
+                    <section class="highlight">
+
+                        <h3>Underground</h3>
+
+                        <p>
+                            Different environmental behavior was used to
+                            distinguish underground areas from the exterior.
+                        </p>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Gameplay Audio -->
+    <section class="wrapper style2">
+
+        <div class="title">
+            Gameplay Audio
+        </div>
+
+        <div class="container">
+
+            <header class="style1">
+
+                <h2>
+                    Audio That Reacts
+                </h2>
+
+                <p>
+                    Sound events connected directly to gameplay behavior.
+                </p>
+
+            </header>
+
+
+            <div class="feature-list">
+
+                <div class="row">
+
+                    <div class="col-6 col-12-medium">
+
+                        <section>
+
+                            <h3 class="icon solid fa-skull-crossbones">
+                                Enemy Audio
+                            </h3>
+
+                            <p>
+                                Enemy behaviors trigger audio events and interact
+                                with the game's combat state.
+                            </p>
+
+                        </section>
+
+                    </div>
+
+
+                    <div class="col-6 col-12-medium">
+
+                        <section>
+
+                            <h3 class="icon solid fa-crosshairs">
+                                Combat
+                            </h3>
+
+                            <p>
+                                Combat events contribute to the transition between
+                                exploration and combat music.
+                            </p>
+
+                        </section>
+
+                    </div>
+
+
+                    <div class="col-6 col-12-medium">
+
+                        <section>
+
+                            <h3 class="icon solid fa-shoe-prints">
+                                Surface Audio
+                            </h3>
+
+                            <p>
+                                Player movement can use different surface sounds
+                                depending on the environment.
+                            </p>
+
+                        </section>
+
+                    </div>
+
+
+                    <div class="col-6 col-12-medium">
+
+                        <section>
+
+                            <h3 class="icon solid fa-hand-pointer">
+                                Interactions
+                            </h3>
+
+                            <p>
+                                Interactive objects use Wwise events to provide
+                                feedback when the player interacts with them.
+                            </p>
+
+                        </section>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- UI Audio -->
+    <section class="wrapper style3">
+
+        <div class="title">
+            UI Audio
+        </div>
+
+        <div class="container">
+
+            <header class="style1">
+
+                <h2>
+                    Feedback Beyond the World
+                </h2>
+
+                <p>
+                    Audio feedback for menus and player interactions.
+                </p>
+
+            </header>
+
+
+            <p>
+                UI sounds were implemented separately from the world audio
+                systems so that interface feedback remains available regardless
+                of the player's location in the game world.
+            </p>
+
+
+            <div class="row">
+
+                <div class="col-4 col-12-medium">
+
+                    <section>
+
+                        <h3>Menu</h3>
+
+                        <p>
+                            Menu navigation and selection feedback.
+                        </p>
+
+                    </section>
+
+                </div>
+
+
+                <div class="col-4 col-12-medium">
+
+                    <section>
+
+                        <h3>Interaction</h3>
+
+                        <p>
+                            Confirmation and interaction feedback.
+                        </p>
+
+                    </section>
+
+                </div>
+
+
+                <div class="col-4 col-12-medium">
+
+                    <section>
+
+                        <h3>Pause</h3>
+
+                        <p>
+                            Audio pause and resume behavior.
+                        </p>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RTPCs -->
+    <section class="wrapper style1">
+
+        <div class="title">
+            RTPCs
+        </div>
+
+        <div class="container">
+
+            <header class="style1">
+
+                <h2>
+                    Dynamic Audio Parameters
+                </h2>
+
+                <p>
+                    Making audio respond continuously rather than only through events.
+                </p>
+
+            </header>
+
+
+            <p>
+                RTPCs were used to connect gameplay values to audio parameters,
+                allowing sound behavior to change dynamically based on what is
+                happening in the game.
+            </p>
+
+
+            <div class="row">
+
+                <div class="col-6 col-12-medium">
+
+                    <section class="highlight">
+
+                        <h3>
+                            Landing Distance
+                        </h3>
+
+                        <p>
+                            A gameplay value influences the resulting audio
+                            behavior based on the distance of the player's landing.
+                        </p>
+
+                    </section>
+
+                </div>
+
+
+                <div class="col-6 col-12-medium">
+
+                    <section class="highlight">
+
+                        <h3>
+                            Dynamic Control
+                        </h3>
+
+                        <p>
+                            Parameters can be adjusted during gameplay to
+                            create more responsive audio behavior.
+                        </p>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Technical Challenges -->
+    <section class="wrapper style2">
+
+        <div class="title">
+            Challenges
+        </div>
+
+        <div class="container">
+
+            <header class="style1">
+
+                <h2>
+                    Problems Became Part of the Process
+                </h2>
+
+                <p>
+                    Building interactive audio also meant solving unexpected technical problems.
+                </p>
+
+            </header>
+
+
+            <div class="feature-list">
+
+                <div class="row">
+
+                    <div class="col-6 col-12-medium">
+
+                        <section>
+
+                            <h3>
+                                Music Transitions
+                            </h3>
+
+                            <p>
+                                Transition timing and cue markers required careful
+                                adjustment to avoid synchronization issues between
+                                music segments.
+                            </p>
+
+                        </section>
+
+                    </div>
+
+
+                    <div class="col-6 col-12-medium">
+
+                        <section>
+
+                            <h3>
+                                Audio Virtualization
+                            </h3>
+
+                            <p>
+                                Certain sounds became virtualized depending on their
+                                playback conditions, requiring investigation of
+                                Wwise voice behavior and event structure.
+                            </p>
+
+                        </section>
+
+                    </div>
+
+
+                    <div class="col-6 col-12-medium">
+
+                        <section>
+
+                            <h3>
+                                Portal Positioning
+                            </h3>
+
+                            <p>
+                                Moving or duplicating portal objects introduced
+                                spatial audio problems that required rebuilding
+                                and repositioning portal setups.
+                            </p>
+
+                        </section>
+
+                    </div>
+
+
+                    <div class="col-6 col-12-medium">
+
+                        <section>
+
+                            <h3>
+                                Pause &amp; Resume
+                            </h3>
+
+                            <p>
+                                Pause behavior required coordination between
+                                gameplay states, Wwise events and the game's
+                                menu system.
+                            </p>
+
+                        </section>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Final Result -->
+    <section class="wrapper style3">
+
+        <div class="title">
+            Final Result
+        </div>
+
+        <div class="container">
+
+            <header class="style1">
+
+                <h2>
+                    From Individual Sounds to an Audio System
+                </h2>
+
+                <p>
+                    The result is a connected interactive audio implementation
+                    rather than a collection of isolated sound effects.
+                </p>
+
+            </header>
+
+
+            <p>
+                The project brings together music, environmental audio, spatial
+                processing, gameplay events, enemy behavior, UI feedback and
+                dynamic parameters into one interactive system.
+            </p>
+
+
+            <!-- Demo Placeholder -->
+            <div class="box">
+
+                <p>
+                    Project demonstration video will go here.
+                </p>
+
+            </div>
+
+
+            <hr />
+
+
+            <!-- What I Learned -->
+            <header class="style1">
+
+                <h2>
+                    What I Learned
+                </h2>
+
+            </header>
+
+
+            <p>
+                This project strengthened my understanding of how sound design
+                changes when it becomes part of an interactive system. Designing
+                the sound itself was only one part of the process; implementing
+                it required thinking about gameplay logic, player behavior,
+                spatial relationships and technical limitations.
+            </p>
+
+
+            <p>
+                It also gave me practical experience troubleshooting Wwise
+                integration issues and iterating on systems until the audio
+                behaved reliably inside the game.
+            </p>
+
+
+            <!-- Navigation -->
+            <ul class="actions special">
+
+                <li>
+                    <a
+                        href="implementation.html"
+                        class="button style2 large"
+                    >
+                        Back to Implementation
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="index.html"
+                        class="button style1 large"
+                    >
+                        Back to Home
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <section id="footer" class="wrapper">
+
+        <div class="container">
+
+            <div id="copyright">
+
+                <ul>
+
+                    <li>
+                        &copy; 2026 Fahed Zaher.
+                    </li>
+
+                    <li>
+                        Design:
+                        <a href="https://html5up.net">
+                            HTML5 UP
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
