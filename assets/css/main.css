@@ -2095,7 +2095,7 @@ input, select, textarea {
 			color: #fff;
 			font-size: 2em;
 			letter-spacing: 0.25em;
-			transform: translateY(-50px);
+			margin-top: -20px;
 		}
 
 		#logo p {
