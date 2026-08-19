@@ -2982,5 +2982,8 @@ input, select, textarea {
 						#copyright ul li:first-child {
 							margin-top: 0;
 						}
+		#logo h1 {
+    color: red !important;
+    transform: translateY(-50px) !important;
 
 	}
