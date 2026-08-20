@@ -2110,106 +2110,110 @@ input, select, textarea {
 
 /* Nav */
 
-	#nav {
-		position: absolute;
-		display: block;
-		top: 2.5em;
-		left: 0;
-		width: 100%;
-		text-align: center;
-	}
+#nav {
+    position: absolute;
+    display: block;
+    top: 2.5em;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
 
-		#nav > ul {
-			display: inline-block;
-			border-radius: 0.35em;
-			box-shadow: inset 0px 0px 1px 1px rgba(160, 161, 167, 0.80);
-			padding: 0 1.5em 0 1.5em;
-		}
+#nav > ul {
+    display: inline-block;
+    border-radius: 0.35em;
+    box-shadow: inset 0px 0px 1px 1px #a0a1a7;
+    padding: 0 1.5em 0 1.5em;
+}
 
-			#nav > ul > li {
-				display: inline-block;
-				text-align: center;
-				padding: 0 1.5em 0 1.5em;
-			}
+#nav > ul > li {
+    display: inline-block;
+    text-align: center;
+    padding: 0 1.5em 0 1.5em;
+}
 
-				#nav > ul > li > ul {
-					display: none;
-				}
+#nav > ul > li > ul {
+    display: none;
+}
 
-				#nav > ul > li > a, #nav > ul > li > span {
-					display: block;
-					color: #a0a1a7;
-					color: rgba(160, 161, 167, 0.80);
-					text-transform: uppercase;
-					text-decoration: none;
-					font-size: 0.7em;
-					letter-spacing: 0.25em;
-					height: 5em;
-					line-height: 5em;
-					-moz-transition: all .25s ease-in-out;
-					-webkit-transition: all .25s ease-in-out;
-					-o-transition: all .25s ease-in-out;
-					-ms-transition: all .25s ease-in-out;
-					transition: all .25s ease-in-out;
-					outline: 0;
-				}
+#nav > ul > li > a,
+#nav > ul > li > span {
+    display: block;
+    color: #a0a1a7;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.7em;
+    letter-spacing: 0.25em;
+    height: 5em;
+    line-height: 5em;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    outline: 0;
+}
 
-				#nav > ul > li:hover > a {
-					color: #a0a1a7;
-				}
+#nav > ul > li:hover > a {
+    color: #a0a1a7;
+}
 
-				#nav > ul > li.active > a, #nav > ul > li.active > span {
-					color: #a0a1a7;
-				}
+#nav > ul > li.active > a,
+#nav > ul > li.active > span {
+    color: #a0a1a7;
+}
 
-	.dropotron {
-		background: #222835 url("images/overlay.png");
-		background-color: rgba(44, 50, 63, 0.925);
-		padding: 1.25em 1em 1.25em 1em;
-		border-radius: 0.35em;
-		box-shadow: inset 0px 0px 1px 1px rgba(160, 161, 167, 0.80);
-		min-width: 12em;
-		text-align: left;
-		margin-top: -1.25em;
-		margin-left: -1px;
-		list-style: none;
-	}
+.dropotron {
+    background: #222835 url("images/overlay.png");
+    background-color: rgba(44, 50, 63, 0.925);
+    padding: 1.25em 1em 1.25em 1em;
+    border-radius: 0.35em;
+    box-shadow: inset 0px 0px 1px 1px #a0a1a7;
+    min-width: 12em;
+    text-align: left;
+    margin-top: -1.25em;
+    margin-left: -1px;
+    list-style: none;
+}
 
-		.dropotron.level-0 {
-			margin-top: -1px;
-			margin-left: 0;
-			border-top-left-radius: 0;
-			border-top-right-radius: 0;
-		}
+.dropotron.level-0 {
+    margin-top: -1px;
+    margin-left: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
 
-		.dropotron a, .dropotron span {
-			-moz-transition: all .25s ease-in-out;
-			-webkit-transition: all .25s ease-in-out;
-			-ms-transition: all .25s ease-in-out;
-			transition: all .25s ease-in-out;
-			display: block;
-			color: #a0a1a7;
-			color: rgba(160, 161, 167, 0.80);
-			text-transform: uppercase;
-			text-decoration: none;
-			font-size: 0.7em;
-			letter-spacing: 0.25em;
-			border-top: solid 1px rgba(160, 161, 167, 0.80);
-			line-height: 3em;
-		}
+.dropotron a,
+.dropotron span {
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    display: block;
+    color: #a0a1a7;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.7em;
+    letter-spacing: 0.25em;
+    border-top: solid 1px #a0a1a7;
+    line-height: 3em;
+}
 
-		.dropotron li {
-			padding-left: 0;
-		}
+.dropotron li {
+    padding-left: 0;
+}
 
-			.dropotron li:first-child a, .dropotron li:first-child span {
-				border-top: 0;
-			}
+.dropotron li:first-child a,
+.dropotron li:first-child span {
+    border-top: 0;
+}
 
-			.dropotron li:hover > a, .dropotron li:hover > span {
-				color: #a0a1a7;
-			}
-
+.dropotron li:hover > a,
+.dropotron li:hover > span {
+    color: #a0a1a7;
+}
 /* Intro */
 
 	#intro {
