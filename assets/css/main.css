@@ -2065,6 +2065,9 @@ input, select, textarea {
 		background-size: cover;
 		padding: 0;
 	}
+.sound-design-header {
+    background-position: center 30% !important;
+}
 
 		#header:before {
 			content: '';
@@ -2079,10 +2082,6 @@ input, select, textarea {
 		.homepage #header {
 			height: 35em;
 		}
-.sound-design-header {
-    background-position: center 30% !important;
-}
-
 /* Logo */
 
 	#logo {
