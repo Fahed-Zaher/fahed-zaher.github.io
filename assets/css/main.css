@@ -2076,6 +2076,9 @@ input, select, textarea {
 .implementation-header {
     background-position: center 40% !important;
 }
+.case-study-header {
+    background-position: center 40% !important;
+}
 
 		#header:before {
 			content: '';
