@@ -1832,6 +1832,9 @@ input, select, textarea {
 		position: relative;
 		top: 0.75em;
 	}
+       .spatial-features {
+       top: 1.25em;
+}
 
 		.feature-list section {
 			border-top: solid 1px #eee;
