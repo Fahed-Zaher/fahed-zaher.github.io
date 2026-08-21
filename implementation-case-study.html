@@ -871,48 +871,44 @@
     </div>
 
 </section>
-    <!-- RTPCs -->
-    <section class="wrapper style1">
+<!-- Optimization -->
+<section class="wrapper style1">
 
-        <div class="title">
-            RTPCs
-        </div>
+    <div class="title">
+        Optimization
+    </div>
 
-        <div class="container">
+    <div class="container">
 
-            <header class="style1">
+        <header class="style1">
 
-                <h2>
-                    Dynamic Audio Parameters
-                </h2>
-
-                <p>
-                    Making audio respond continuously rather than only through events.
-                </p>
-
-            </header>
-
+            <h2>
+                Efficient Audio Without Sacrificing Detail
+            </h2>
 
             <p>
-                RTPCs were used to connect gameplay values to audio parameters,
-                allowing sound behavior to change dynamically based on what is
-                happening in the game.
+                Audio systems were structured to manage voice usage, processing,
+                and playback while maintaining a dynamic soundscape.
             </p>
 
+        </header>
+
+
+        <div class="feature-list">
 
             <div class="row">
 
                 <div class="col-6 col-12-medium">
 
-                    <section class="highlight">
+                    <section>
 
                         <h3>
-                            Landing Distance
+                            Voice Limiting
                         </h3>
 
                         <p>
-                            A gameplay value influences the resulting audio
-                            behavior based on the distance of the player's landing.
+                            Voice limits were configured to prevent excessive
+                            instances of the same sounds from playing simultaneously.
                         </p>
 
                     </section>
@@ -922,15 +918,111 @@
 
                 <div class="col-6 col-12-medium">
 
-                    <section class="highlight">
+                    <section>
 
                         <h3>
-                            Dynamic Control
+                            Prioritization
                         </h3>
 
                         <p>
-                            Parameters can be adjusted during gameplay to
-                            create more responsive audio behavior.
+                            Audio voices were prioritized so important sounds
+                            could take precedence when multiple sounds competed
+                            for available voices.
+                        </p>
+
+                    </section>
+
+                </div>
+
+
+                <div class="col-6 col-12-medium">
+
+                    <section>
+
+                        <h3>
+                            Voice Virtualization
+                        </h3>
+
+                        <p>
+                            Wwise voice virtualization was used to reduce
+                            unnecessary CPU processing when sounds were no longer
+                            perceptually important.
+                        </p>
+
+                    </section>
+
+                </div>
+
+
+                <div class="col-6 col-12-medium">
+
+                    <section>
+
+                        <h3>
+                            Probability
+                        </h3>
+
+                        <p>
+                            Probability settings were used to reduce unnecessary
+                            event playback, particularly when multiple enemies
+                            were active simultaneously.
+                        </p>
+
+                    </section>
+
+                </div>
+
+
+                <div class="col-6 col-12-medium">
+
+                    <section>
+
+                        <h3>
+                            Ambient Audio
+                        </h3>
+
+                        <p>
+                            Large ambient sounds and multi-position playback
+                            were used to create environmental coverage while
+                            reducing the need for numerous individual audio sources.
+                        </p>
+
+                    </section>
+
+                </div>
+
+
+                <div class="col-6 col-12-medium">
+
+                    <section>
+
+                        <h3>
+                            Attenuation
+                        </h3>
+
+                        <p>
+                            Attenuation curves controlled when sounds became
+                            inaudible or virtualized based on their distance
+                            from the listener.
+                        </p>
+
+                    </section>
+
+                </div>
+
+
+                <div class="col-6 col-12-medium">
+
+                    <section>
+
+                        <h3>
+                            Sound Variation
+                        </h3>
+
+                        <p>
+                            Pitch, volume, and filter randomization were used
+                            to introduce variation and prevent frequently
+                            triggered sounds from becoming repetitive.
                         </p>
 
                     </section>
@@ -941,109 +1033,113 @@
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- Technical Challenges -->
-    <section class="wrapper style2">
+<!-- Technical Challenges -->
+<section class="wrapper style2">
 
-        <div class="title">
-            Challenges
-        </div>
+    <div class="title">
+        Challenges
+    </div>
 
-        <div class="container">
+    <div class="container">
 
-            <header class="style1">
+        <header class="style1">
 
-                <h2>
-                    Problems Became Part of the Process
-                </h2>
+            <h2>
+                Problems Became Part of the Process
+            </h2>
 
-                <p>
-                    Building interactive audio also meant solving unexpected technical problems.
-                </p>
+            <p>
+                Building interactive audio also meant solving unexpected
+                technical problems and refining the implementation through iteration.
+            </p>
 
-            </header>
-
-
-            <div class="feature-list">
-
-                <div class="row">
-
-                    <div class="col-6 col-12-medium">
-
-                        <section>
-
-                            <h3>
-                                Music Transitions
-                            </h3>
-
-                            <p>
-                                Transition timing and cue markers required careful
-                                adjustment to avoid synchronization issues between
-                                music segments.
-                            </p>
-
-                        </section>
-
-                    </div>
+        </header>
 
 
-                    <div class="col-6 col-12-medium">
+        <div class="feature-list">
 
-                        <section>
+            <div class="row">
 
-                            <h3>
-                                Audio Virtualization
-                            </h3>
+                <div class="col-6 col-12-medium">
 
-                            <p>
-                                Certain sounds became virtualized depending on their
-                                playback conditions, requiring investigation of
-                                Wwise voice behavior and event structure.
-                            </p>
+                    <section>
 
-                        </section>
+                        <h3>
+                            Music Synchronization
+                        </h3>
 
-                    </div>
+                        <p>
+                            Music transitions initially produced synchronization
+                            issues caused by cue markers and transition settings.
+                            Adjusting the markers and transition segments resolved
+                            the timing problems between music states.
+                        </p>
 
+                    </section>
 
-                    <div class="col-6 col-12-medium">
-
-                        <section>
-
-                            <h3>
-                                Portal Positioning
-                            </h3>
-
-                            <p>
-                                Moving or duplicating portal objects introduced
-                                spatial audio problems that required rebuilding
-                                and repositioning portal setups.
-                            </p>
-
-                        </section>
-
-                    </div>
+                </div>
 
 
-                    <div class="col-6 col-12-medium">
+                <div class="col-6 col-12-medium">
 
-                        <section>
+                    <section>
 
-                            <h3>
-                                Pause &amp; Resume
-                            </h3>
+                        <h3>
+                            Audio Virtualization
+                        </h3>
 
-                            <p>
-                                Pause behavior required coordination between
-                                gameplay states, Wwise events and the game's
-                                menu system.
-                            </p>
+                        <p>
+                            Some looping sounds became virtualized under specific
+                            gameplay conditions, requiring investigation of Wwise
+                            voice behavior, event structure, and playback conditions.
+                        </p>
 
-                        </section>
+                    </section>
 
-                    </div>
+                </div>
+
+
+                <div class="col-6 col-12-medium">
+
+                    <section>
+
+                        <h3>
+                            Spatial Audio &amp; Portals
+                        </h3>
+
+                        <p>
+                            Rooms and Portals required careful positioning and
+                            configuration to maintain consistent spatial behavior.
+                            Duplicated or repositioned setups sometimes produced
+                            unexpected results.
+                        </p>
+
+                    </section>
+
+                </div>
+
+
+                <div class="col-6 col-12-medium">
+
+                    <section>
+
+                        <h3>
+                            Gameplay State Integration
+                        </h3>
+
+                        <p>
+                            Connecting enemy behavior to Wwise states introduced
+                            unexpected state transitions, particularly when enemies
+                            entered or exited combat. The implementation was refined
+                            to keep gameplay and audio states synchronized.
+                        </p>
+
+                    </section>
 
                 </div>
 
@@ -1051,9 +1147,9 @@
 
         </div>
 
-    </section>
+    </div>
 
-
+</section>
     <!-- Final Result -->
     <section class="wrapper style3">
 
