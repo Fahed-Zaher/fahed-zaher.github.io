@@ -706,88 +706,107 @@
     </section>
 
 
-    <!-- UI Audio -->
-    <section class="wrapper style3">
+<!-- UI Audio -->
+<section class="wrapper style3">
 
-        <div class="title">
-            UI Audio
-        </div>
+    <div class="title">
+        UI Audio
+    </div>
 
-        <div class="container">
+    <div class="container">
 
-            <header class="style1">
+        <header class="style1">
 
-                <h2>
-                    Feedback Beyond the World
-                </h2>
-
-                <p>
-                    Audio feedback for menus and player interactions.
-                </p>
-
-            </header>
-
+            <h2>
+                Feedback Beyond the World
+            </h2>
 
             <p>
-                UI sounds were implemented separately from the world audio
-                systems so that interface feedback remains available regardless
-                of the player's location in the game world.
+                Audio feedback and music control for menus and player interactions.
             </p>
 
-
-            <div class="row">
-
-                <div class="col-4 col-12-medium">
-
-                    <section>
-
-                        <h3>Menu</h3>
-
-                        <p>
-                            Menu navigation and selection feedback.
-                        </p>
-
-                    </section>
-
-                </div>
+        </header>
 
 
-                <div class="col-4 col-12-medium">
-
-                    <section>
-
-                        <h3>Interaction</h3>
-
-                        <p>
-                            Confirmation and interaction feedback.
-                        </p>
-
-                    </section>
-
-                </div>
+        <p>
+            UI audio was implemented to provide responsive feedback for menus,
+            player interactions, and pause states. Wwise States were also used
+            to duck the music during menu interactions, while bus volume was
+            mapped to the menu to allow players to control audio levels directly.
+        </p>
 
 
-                <div class="col-4 col-12-medium">
+        <div style="text-align: center; margin: 2em 0;">
 
-                    <section>
+            <video
+                controls
+                preload="metadata"
+                style="width: 100%; max-width: 900px;"
+            >
+                <source
+                    src="Sound Design/UI-Audio.mp4"
+                    type="video/mp4"
+                >
+                Your browser does not support the video tag.
+            </video>
 
-                        <h3>Pause</h3>
+        </div>
 
-                        <p>
-                            Audio pause and resume behavior.
-                        </p>
 
-                    </section>
+        <div class="row">
 
-                </div>
+            <div class="col-4 col-12-medium">
+
+                <section>
+
+                    <h3>Menu Feedback</h3>
+
+                    <p>
+                        Navigation and selection sounds provide immediate
+                        feedback when interacting with the interface.
+                    </p>
+
+                </section>
+
+            </div>
+
+
+            <div class="col-4 col-12-medium">
+
+                <section>
+
+                    <h3>Music Ducking</h3>
+
+                    <p>
+                        Wwise States were used to automatically duck music
+                        during menu and pause interactions with smooth transition.
+                    </p>
+
+                </section>
+
+            </div>
+
+
+            <div class="col-4 col-12-medium">
+
+                <section>
+
+                    <h3>Audio Control</h3>
+
+                    <p>
+                        Bus volume was mapped to the menu, allowing players
+                        to adjust the game's audio levels.
+                    </p>
+
+                </section>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
 
-
+</section>
     <!-- RTPCs -->
     <section class="wrapper style1">
 
