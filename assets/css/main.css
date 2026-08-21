@@ -2034,17 +2034,18 @@ input, select, textarea {
 				color: #484d55;
 			}
 
-			.wrapper.style3 .image {
-				border: solid 10px #fff;
-			}
- /* Remove border from Portal screenshot */
-    .wrapper.style3 .portal-image {
-        border: none;
-    }
-.spatial-content {
-    margin-top: -20px;
-}
+		.wrapper.style3 .image {
+			border: solid 10px #fff;
+		}
 
+		/* Remove border from Portal screenshot */
+		.wrapper.style3 .portal-image {
+			border: none;
+		}
+
+		.spatial-content {
+			margin-top: -35px;
+		}
 /* Page Wrapper */
 
 	#page-wrapper > section {
