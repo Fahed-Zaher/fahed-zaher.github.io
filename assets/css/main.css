@@ -2041,6 +2041,9 @@ input, select, textarea {
     .wrapper.style3 .portal-image {
         border: none;
     }
+.spatial-content {
+    margin-top: -20px;
+}
 
 /* Page Wrapper */
 
