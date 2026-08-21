@@ -136,7 +136,7 @@
             </p>
 
             </p>
-                Audio Assets
+                Audio Assets:
                 Some audio assets used in the project were provided with Unity's 3D Game Kit. The project focuses
                 primarily on Wwise implementation, interactive audio systems, spatialization, and gameplay integration.
             </p>
@@ -194,91 +194,115 @@
 
     </section>
 
+<!-- Interactive Music -->
+<section class="wrapper style2">
 
-    <!-- Interactive Music -->
-    <section class="wrapper style2">
+    <div class="title">
+        Interactive Music
+    </div>
 
-        <div class="title">
-            Interactive Music
+    <div class="container">
+
+        <header class="style1">
+
+            <h2>
+                Exploration &amp; Combat
+            </h2>
+
+            <p>
+                Music that responds dynamically to the state of the gameplay.
+            </p>
+
+        </header>
+
+        <p>
+            The music system was built around two primary gameplay states:
+            <strong>exploration</strong> and <strong>combat</strong>. Wwise states
+            control the active musical behavior, allowing the soundtrack to
+            transition dynamically as the player's situation changes.
+        </p>
+
+
+        <!-- Interactive Music Demo -->
+        <div class="video-container">
+
+            <video
+                controls
+                preload="metadata"
+                style="width:100%;"
+            >
+                <source
+                    src="YOUR-MUSIC-VIDEO-PATH-HERE"
+                    type="video/mp4"
+                >
+                Your browser does not support the video element.
+            </video>
+
         </div>
 
-        <div class="container">
 
-            <header class="style1">
+        <div class="row">
 
-                <h2>
-                    Exploration &amp; Combat
-                </h2>
+            <div class="col-6 col-12-medium">
 
-                <p>
-                    Music that responds to the state of the gameplay.
-                </p>
+                <section>
 
-            </header>
+                    <h3 class="icon solid fa-music">
+                        Exploration
+                    </h3>
 
+                    <p>
+                        The exploration state provides the default musical
+                        atmosphere while the player moves through the level.
+                    </p>
 
-            <p>
-                The music system was designed around two primary gameplay states:
-                <strong>exploration</strong> and <strong>combat</strong>.
-            </p>
-
-            <p>
-                Wwise states are used to control which musical behavior is active,
-                allowing the music to transition when the player enters or exits
-                combat.
-            </p>
-
-
-            <div class="row">
-
-                <div class="col-6 col-12-medium">
-
-                    <section>
-
-                        <h3 class="icon solid fa-music">
-                            Exploration
-                        </h3>
-
-                        <p>
-                            The exploration state provides the default musical
-                            atmosphere while the player moves through the level.
-                        </p>
-
-                    </section>
-
-                </div>
-
-
-                <div class="col-6 col-12-medium">
-
-                    <section>
-
-                        <h3 class="icon solid fa-bolt">
-                            Combat
-                        </h3>
-
-                        <p>
-                            Enemy detection switches the music into a combat state,
-                            increasing tension and communicating the change in
-                            gameplay.
-                        </p>
-
-                    </section>
-
-                </div>
+                </section>
 
             </div>
 
 
-            <p>
-                Transition rules were also configured to make the change between
-                states feel musical rather than abrupt.
-            </p>
+            <div class="col-6 col-12-medium">
+
+                <section>
+
+                    <h3 class="icon solid fa-bolt">
+                        Combat
+                    </h3>
+
+                    <p>
+                        When an enemy detects the player, the music switches
+                        to the combat state, increasing tension and reflecting
+                        the change in gameplay.
+                    </p>
+
+                </section>
+
+            </div>
 
         </div>
 
-    </section>
 
+        <h3>
+            Wwise Implementation
+        </h3>
+
+        <p>
+            The music was organized using a Wwise Switch Container with
+            separate exploration and combat music, while transition rules
+            control how the soundtrack moves between states.
+        </p>
+
+        <!-- Wwise Music Setup Screenshot -->
+        <div class="image featured">
+            <img
+                src="YOUR-WWISE-SCREENSHOT-PATH-HERE"
+                alt="Wwise interactive music setup showing exploration and combat music"
+            />
+        </div>
+
+    </div>
+
+</section>
 
     <!-- Spatial Audio -->
     <section class="wrapper style3">
