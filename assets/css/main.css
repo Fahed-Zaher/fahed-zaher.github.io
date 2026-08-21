@@ -2037,6 +2037,10 @@ input, select, textarea {
 			.wrapper.style3 .image {
 				border: solid 10px #fff;
 			}
+ /* Remove border from Portal screenshot */
+    .wrapper.style3 .portal-image {
+        border: none;
+    }
 
 /* Page Wrapper */
 
