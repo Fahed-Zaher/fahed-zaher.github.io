@@ -1,498 +1,761 @@
 <!DOCTYPE HTML>
 <!--
-	HTML5 UP | Escape Velocity
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license
+    Escape Velocity by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license
 -->
 <html>
 <head>
-	<title>Unreal × Wwise — Case Study | Fahed Zaher</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
+    <title>Unreal × Wwise — Case Study | Fahed Zaher</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
 <body class="is-preload">
+<div id="page-wrapper">
 
-	<!-- Header -->
-	<section id="header" class="dark">
-		<header>
-			<h1>Unreal × Wwise</h1>
-			<p>Interactive Game Audio &amp; Spatial Systems</p>
-		</header>
-	</section>
-
-
-	<!-- Main -->
-	<section id="main">
-
-		<div class="container">
-
-			<!-- Overview -->
-			<header class="major">
-				<h2>Overview</h2>
-			</header>
-
-			<p>
-				This project explores interactive game audio implementation using
-				Unreal Engine and Wwise. Rather than building a single traditional
-				game level, I created a series of dedicated audio environments,
-				each designed to demonstrate a specific implementation system.
-			</p>
-
-			<p>
-				The project focuses on spatial audio, environmental sound,
-				dynamic footsteps, occlusion and interactive music, with each
-				system implemented and tested directly inside Unreal Engine.
-			</p>
-
-
-			<!-- Engine & Middleware -->
-			<section>
-				<header class="major">
-					<h2>Engine &amp; Middleware</h2>
-				</header>
-
-				<div class="row gtr-50">
-
-					<div class="col-6 col-12-small">
-						<section class="box">
-							<header>
-								<h3>Unreal Engine</h3>
-							</header>
-
-							<p>
-								<strong>Unreal Engine 5.8.2</strong>
-							</p>
-
-							<p>
-								Used as the primary game engine for level design,
-								Blueprint implementation, gameplay interaction
-								and audio system integration.
-							</p>
-						</section>
-					</div>
-
-					<div class="col-6 col-12-small">
-						<section class="box">
-							<header>
-								<h3>Wwise</h3>
-							</header>
-
-							<p>
-								<strong>Wwise 2025.1.10</strong>
-							</p>
-
-							<p>
-								Used for interactive audio implementation,
-								spatialization, attenuation, obstruction,
-								RTPC-driven systems and music integration.
-							</p>
-						</section>
-					</div>
-
-				</div>
-			</section>
-
-
-			<!-- Systems Explored -->
-			<section>
-				<header class="major">
-					<h2>Systems Explored</h2>
-				</header>
-
-				<div class="row gtr-50">
-
-					<div class="col-6 col-12-small">
-						<section class="box">
-							<header>
-								<h3>Spatial Audio</h3>
-							</header>
-							<p>
-								Explored 3D positioning, attenuation and spatial
-								behavior through dedicated environments designed
-								to demonstrate how sound changes within a space.
-							</p>
-						</section>
-					</div>
-
-					<div class="col-6 col-12-small">
-						<section class="box">
-							<header>
-								<h3>Environmental Audio</h3>
-							</header>
-							<p>
-								Built a sci-fi environmental soundscape using
-								layered ambient elements and positional sounds
-								to create a cohesive space.
-							</p>
-						</section>
-					</div>
-
-					<div class="col-6 col-12-small">
-						<section class="box">
-							<header>
-								<h3>Dynamic Footsteps</h3>
-							</header>
-							<p>
-								Implemented surface-based footsteps and landing
-								audio using Unreal's surface detection and
-								Blueprint-driven event logic.
-							</p>
-						</section>
-					</div>
-
-					<div class="col-6 col-12-small">
-						<section class="box">
-							<header>
-								<h3>Occlusion &amp; Obstruction</h3>
-							</header>
-							<p>
-								Explored how environmental geometry affects
-								3D sound by implementing obstruction and
-								occlusion behavior between the listener and
-								audio sources.
-							</p>
-						</section>
-					</div>
-
-					<div class="col-6 col-12-small">
-						<section class="box">
-							<header>
-								<h3>Interactive Music</h3>
-							</header>
-							<p>
-								Implemented vertical music layering using
-								RTPC-driven control to smoothly introduce
-								and remove musical layers based on player
-								movement.
-							</p>
-						</section>
-					</div>
-
-				</div>
-			</section>
-
-
-			<!-- Spatial Audio -->
-			<section>
-				<header class="major">
-					<h2>Spatial Audio</h2>
-					<p>Acoustic Maze &amp; Occlusion Room</p>
-				</header>
-
-				<p>
-					The spatial audio section focuses on how positioning,
-					distance and environmental geometry influence the
-					player's perception of sound.
-				</p>
-
-
-				<!-- Acoustic Maze -->
-				<section>
-					<header>
-						<h3>Acoustic Maze</h3>
-					</header>
-
-					<p>
-						A large maze environment designed to demonstrate
-						spatial audio behavior. Multiple sound sources are
-						placed throughout the environment, allowing the
-						listener to navigate through different spaces while
-						identifying sounds based on their position.
-					</p>
-
-					<div class="video-container">
-						<iframe
-							width="100%"
-							style="aspect-ratio:16/9; display:block;"
-							src="https://www.youtube.com/embed/YOUR_ACOUSTIC_MAZE_ID"
-							title="Unreal × Wwise — Acoustic Maze"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							allowfullscreen>
-						</iframe>
-					</div>
-				</section>
-
-
-				<hr />
-
-
-				<!-- Occlusion -->
-				<section>
-					<header>
-						<h3>Mini Occlusion Room</h3>
-					</header>
-
-					<p>
-						A compact environment created to demonstrate how
-						obstacles between the listener and a sound source
-						can alter the perceived sound. The implementation
-						explores obstruction and occlusion behavior as the
-						player moves around the environment.
-					</p>
-
-					<div class="video-container">
-						<iframe
-							width="100%"
-							style="aspect-ratio:16/9; display:block;"
-							src="https://www.youtube.com/embed/YOUR_OCCLUSION_ID"
-							title="Unreal × Wwise — Occlusion Room"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							allowfullscreen>
-						</iframe>
-					</div>
-				</section>
-
-			</section>
-
-
-			<!-- Environmental Audio -->
-			<section>
-				<header class="major">
-					<h2>Environmental Audio</h2>
-					<p>Sci-Fi Environmental Soundscape</p>
-				</header>
-
-				<p>
-					This environment focuses on creating a believable
-					sci-fi space through layered environmental sounds,
-					ambient elements and positional audio sources.
-				</p>
-
-				<div class="video-container">
-					<iframe
-						width="100%"
-						style="aspect-ratio:16/9; display:block;"
-						src="https://www.youtube.com/embed/YOUR_ENVIRONMENT_ID"
-						title="Unreal × Wwise — Environmental Audio"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						allowfullscreen>
-					</iframe>
-				</div>
-			</section>
-
-
-			<!-- Dynamic Footsteps -->
-			<section>
-				<header class="major">
-					<h2>Dynamic Footsteps</h2>
-					<p>Surface-Based Footstep &amp; Landing Audio</p>
-				</header>
-
-				<p>
-					The footsteps system uses Unreal Engine's surface
-					detection to determine which footstep and landing
-					sounds should be triggered by the player's movement.
-				</p>
-
-				<p>
-					The system was implemented through Blueprint logic
-					and animation notify events, allowing the appropriate
-					audio event to be triggered according to the detected
-					surface.
-				</p>
-
-				<div class="video-container">
-					<iframe
-						width="100%"
-						style="aspect-ratio:16/9; display:block;"
-						src="https://www.youtube.com/embed/YOUR_FOOTSTEPS_ID"
-						title="Unreal × Wwise — Dynamic Footsteps"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						allowfullscreen>
-					</iframe>
-				</div>
-			</section>
-
-
-			<!-- Interactive Music -->
-			<section>
-				<header class="major">
-					<h2>Interactive Music</h2>
-					<p>RTPC-Driven Vertical Layering</p>
-				</header>
-
-				<p>
-					The music system demonstrates vertical layering using
-					an RTPC-driven approach. Instead of switching between
-					different musical states, individual layers are faded
-					in and out according to the player's movement.
-				</p>
-
-				<p>
-					The musical stems begin together and are dynamically
-					controlled to create a gradual transition between
-					different levels of musical intensity.
-				</p>
-
-				<div class="video-container">
-					<iframe
-						width="100%"
-						style="aspect-ratio:16/9; display:block;"
-						src="https://www.youtube.com/embed/YOUR_MUSIC_ID"
-						title="Unreal × Wwise — Interactive Music"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						allowfullscreen>
-					</iframe>
-				</div>
-			</section>
-
-
-			<!-- Technical Overview -->
-			<section>
-				<header class="major">
-					<h2>Technical Overview</h2>
-				</header>
-
-				<div class="table-wrapper">
-					<table>
-						<thead>
-							<tr>
-								<th>System</th>
-								<th>Implementation</th>
-							</tr>
-						</thead>
-
-						<tbody>
-							<tr>
-								<td>Engine</td>
-								<td>Unreal Engine 5.8.2</td>
-							</tr>
-
-							<tr>
-								<td>Middleware</td>
-								<td>Wwise 2025.1.10</td>
-							</tr>
-
-							<tr>
-								<td>Spatial Audio</td>
-								<td>3D positioning, attenuation and spatial behavior</td>
-							</tr>
-
-							<tr>
-								<td>Environmental Audio</td>
-								<td>Layered sci-fi environmental soundscape</td>
-							</tr>
-
-							<tr>
-								<td>Footsteps</td>
-								<td>Surface-based footsteps and landing sounds</td>
-							</tr>
-
-							<tr>
-								<td>Occlusion</td>
-								<td>Obstruction and occlusion behavior</td>
-							</tr>
-
-							<tr>
-								<td>Interactive Music</td>
-								<td>RTPC-driven vertical music layering</td>
-							</tr>
-
-							<tr>
-								<td>Implementation</td>
-								<td>Blueprint-based Unreal integration</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</section>
-
-
-			<!-- Final Result -->
-			<section>
-				<header class="major">
-					<h2>Final Result</h2>
-				</header>
-
-				<p>
-					The project brings together several core interactive
-					audio systems inside Unreal Engine, with each environment
-					focusing on a specific implementation challenge.
-				</p>
-
-				<p>
-					The result is a compact showcase of spatial audio,
-					environmental sound, gameplay-driven audio, occlusion
-					and interactive music implemented through Wwise.
-				</p>
-
-				<div class="video-container">
-					<iframe
-						width="100%"
-						style="aspect-ratio:16/9; display:block;"
-						src="https://www.youtube.com/embed/YOUR_UNREAL_REEL_ID"
-						title="Unreal × Wwise — Interactive Game Audio"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						allowfullscreen>
-					</iframe>
-				</div>
-			</section>
-
-
-			<!-- What I Learned -->
-			<section>
-				<header class="major">
-					<h2>What I Learned</h2>
-				</header>
-
-				<p>
-					This project strengthened my understanding of implementing
-					interactive audio directly within Unreal Engine and gave
-					me practical experience translating sound design concepts
-					into responsive gameplay systems.
-				</p>
-
-				<p>
-					It also allowed me to explore different approaches to
-					spatial audio, dynamic gameplay audio and interactive
-					music while working with Wwise in a Blueprint-focused
-					workflow.
-				</p>
-			</section>
-
-
-			<!-- Back -->
-			<section>
-				<ul class="actions special">
-					<li>
-						<a href="implementation.html" class="button style1 large">
-							Back to Implementation
-						</a>
-					</li>
-				</ul>
-			</section>
-
-		</div>
-
-	</section>
-
-
-	<!-- Footer -->
-	<section id="footer">
-		<div class="container">
-			<ul class="copyright">
-				<li>&copy; 2026 Fahed Zaher. All rights reserved.</li>
-				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-			</ul>
-		</div>
-	</section>
-
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.dropotron.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+
+    <!-- Header -->
+    <section id="header" class="wrapper case-study-header">
+
+        <div id="logo">
+            <h1><a href="index.html">FAHED ZAHER</a></h1>
+            <p>Game Audio · Sound Design · Music</p>
+        </div>
+
+
+        <!-- Navigation -->
+        <nav id="nav">
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="implementation.html">Implementation</a>
+                </li>
+
+                <li>
+                    <a href="music.html">Music</a>
+                </li>
+
+                <li>
+                    <a href="sound-design.html">Sound Design</a>
+                </li>
+
+                <li>
+                    <a href="index.html#about">About</a>
+                </li>
+
+                <li>
+                    <a href="index.html#contact">Contact</a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </section>
+
+
+<!-- Case Study Header -->
+<section class="wrapper style3">
+
+    <div class="title">
+        Case Study
+    </div>
+
+    <div class="container">
+
+        <header class="style1">
+
+            <h2>
+                Unreal × Wwise
+            </h2>
+
+            <p>
+                Interactive Audio &amp; Spatial Audio Showcase
+            </p>
+
+        </header>
+
+
+        <!-- Overall Project Video -->
+        <iframe
+            width="100%"
+            style="aspect-ratio:16/9; display:block;"
+            src="https://www.youtube.com/embed/YOUR_UNREAL_REEL_ID"
+            title="Final Audio Reel — Unreal × Wwise"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+        </iframe>
+
+
+        <p>
+            This project explores the implementation of interactive game audio
+            using <strong>Wwise</strong> and <strong>Unreal Engine</strong>.
+        </p>
+
+        <p>
+            Rather than building a single large gameplay system, the project
+            is structured as a collection of focused environments, with each
+            room designed to explore a different audio implementation technique.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- Project Overview -->
+<section class="wrapper style1">
+
+    <div class="title">
+        Overview
+    </div>
+
+    <div class="container">
+
+        <header class="style1">
+
+            <h2>
+                Five Audio-Focused Environments
+            </h2>
+
+            <p>
+                A compact Unreal project built around practical Wwise implementation.
+            </p>
+
+        </header>
+
+
+        <div class="row">
+
+            <div class="col-4 col-12-medium">
+
+                <section class="highlight">
+
+                    <h3>
+                        Spatial Audio
+                    </h3>
+
+                    <p>
+                        Acoustic maze and occlusion environments exploring
+                        positional and obstructed sound.
+                    </p>
+
+                </section>
+
+            </div>
+
+
+            <div class="col-4 col-12-medium">
+
+                <section class="highlight">
+
+                    <h3>
+                        Environment
+                    </h3>
+
+                    <p>
+                        A sci-fi laboratory soundscape built around
+                        localized environmental audio.
+                    </p>
+
+                </section>
+
+            </div>
+
+
+            <div class="col-4 col-12-medium">
+
+                <section class="highlight">
+
+                    <h3>
+                        Dynamic Audio
+                    </h3>
+
+                    <p>
+                        Surface-based footsteps, landing sounds,
+                        and RTPC-driven interactive music.
+                    </p>
+
+                </section>
+
+            </div>
+
+        </div>
+
+
+        <p>
+            <strong>Engine:</strong> Unreal Engine 5.8.2
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <strong>Middleware:</strong> Wwise 2025.1
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- Spatial Audio -->
+<section class="wrapper style2">
+
+    <div class="title">
+        Spatial Audio
+    </div>
+
+    <div class="container">
+
+        <header class="style1">
+
+            <h2>
+                Acoustic Maze
+            </h2>
+
+            <p>
+                Exploring positional audio through a maze environment.
+            </p>
+
+        </header>
+
+
+        <p>
+            The Acoustic Maze was designed to explore how spatial audio
+            behaves as the player moves through a large environment containing
+            multiple paths, corners, and dead ends.
+        </p>
+
+        <p>
+            The environment provides a simple way to evaluate how the
+            perceived position and direction of sounds change as the player
+            navigates through the space.
+        </p>
+
+
+        <!-- Acoustic Maze Video -->
+        <iframe
+            width="100%"
+            style="aspect-ratio:16/9; display:block;"
+            src="https://www.youtube.com/embed/YOUR_ACOUSTIC_MAZE_ID"
+            title="Acoustic Maze — Unreal × Wwise"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+        </iframe>
+
+
+        <p>
+            The maze was intentionally kept focused on the audio behavior
+            rather than gameplay, making it easier to hear changes in
+            spatial positioning while moving through the environment.
+        </p>
+
+
+        <header class="style1">
+
+            <h2>
+                Occlusion Room
+            </h2>
+
+            <p>
+                Exploring obstruction between the listener and sound sources.
+            </p>
+
+        </header>
+
+
+        <p>
+            A separate environment was created to test how sound behaves
+            when the direct path between the player and a sound source
+            becomes obstructed.
+        </p>
+
+        <p>
+            The setup allows different positions around the environment
+            to demonstrate the difference between unobstructed and
+            obstructed sound.
+        </p>
+
+
+        <!-- Occlusion Video -->
+        <iframe
+            width="100%"
+            style="aspect-ratio:16/9; display:block;"
+            src="https://www.youtube.com/embed/YOUR_OCCLUSION_ID"
+            title="Occlusion Room — Unreal × Wwise"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</section>
+
+
+<!-- Environmental Audio -->
+<section class="wrapper style3">
+
+    <div class="title">
+        Environmental Audio
+    </div>
+
+    <div class="container">
+
+        <header class="style1">
+
+            <h2>
+                Sci-Fi Environmental Soundscape
+            </h2>
+
+            <p>
+                Building a localized environmental atmosphere.
+            </p>
+
+        </header>
+
+
+        <p>
+            This environment is a small sci-fi laboratory built around
+            computers, equipment, and other interactive-looking elements.
+            Each element provides an opportunity to introduce localized
+            environmental sounds and build a more believable sense of place.
+        </p>
+
+        <p>
+            The goal was to create an environment that feels active without
+            relying on gameplay events, using individual 3D sound sources
+            to give different areas of the room their own sonic character.
+        </p>
+
+
+        <!-- Environmental Audio Video -->
+        <iframe
+            width="100%"
+            style="aspect-ratio:16/9; display:block;"
+            src="https://www.youtube.com/embed/YOUR_ENVIRONMENT_ID"
+            title="Environmental Soundscape — Unreal × Wwise"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+        </iframe>
+
+
+        <p>
+            The result is a compact environmental soundscape that demonstrates
+            how individual spatialized sounds can work together to establish
+            the identity of a location.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- Dynamic Footsteps -->
+<section class="wrapper style1">
+
+    <div class="title">
+        Dynamic Footsteps
+    </div>
+
+    <div class="container">
+
+        <header class="style1">
+
+            <h2>
+                Surface-Based Footsteps &amp; Landing
+            </h2>
+
+            <p>
+                Footstep and landing sounds driven by the environment.
+            </p>
+
+        </header>
+
+
+        <p>
+            The Dynamic Footsteps room focuses on connecting player movement
+            with the environment underneath the character.
+        </p>
+
+        <p>
+            Unreal Engine surface detection is used to identify the surface
+            beneath the player, allowing different footstep sounds to be
+            triggered depending on the material being walked across.
+        </p>
+
+
+        <!-- Footsteps Video -->
+        <iframe
+            width="100%"
+            style="aspect-ratio:16/9; display:block;"
+            src="https://www.youtube.com/embed/YOUR_FOOTSTEPS_ID"
+            title="Dynamic Footsteps — Unreal × Wwise"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+        </iframe>
+
+
+        <div class="row">
+
+            <div class="col-4 col-12-medium">
+
+                <section class="highlight">
+
+                    <h3>
+                        Surface Detection
+                    </h3>
+
+                    <p>
+                        Unreal Engine surface information determines
+                        which audio variation should be played.
+                    </p>
+
+                </section>
+
+            </div>
+
+
+            <div class="col-4 col-12-medium">
+
+                <section class="highlight">
+
+                    <h3>
+                        Footsteps
+                    </h3>
+
+                    <p>
+                        Footstep events are triggered dynamically
+                        from the character's movement.
+                    </p>
+
+                </section>
+
+            </div>
+
+
+            <div class="col-4 col-12-medium">
+
+                <section class="highlight">
+
+                    <h3>
+                        Landing
+                    </h3>
+
+                    <p>
+                        Landing audio is integrated alongside
+                        the movement system.
+                    </p>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Interactive Music -->
+<section class="wrapper style2">
+
+    <div class="title">
+        Interactive Music
+    </div>
+
+    <div class="container">
+
+        <header class="style1">
+
+            <h2>
+                RTPC-Driven Vertical Layering
+            </h2>
+
+            <p>
+                Dynamically blending musical layers during gameplay.
+            </p>
+
+        </header>
+
+
+        <p>
+            The Mixing Room explores interactive music through vertical
+            layering. Multiple musical stems are loaded into Wwise and
+            their balance is controlled dynamically rather than switching
+            between completely separate pieces of music.
+        </p>
+
+        <p>
+            An RTPC is used to control the relationship between the musical
+            layers, allowing the soundtrack to gradually change as the
+            player's movement changes.
+        </p>
+
+
+        <!-- Interactive Music Video -->
+        <iframe
+            width="100%"
+            style="aspect-ratio:16/9; display:block;"
+            src="https://www.youtube.com/embed/YOUR_MUSIC_ID"
+            title="RTPC-Driven Vertical Layering — Unreal × Wwise"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+        </iframe>
+
+
+        <div class="row">
+
+            <div class="col-3 col-12-medium">
+
+                <section class="highlight">
+
+                    <h3>
+                        Stems
+                    </h3>
+
+                    <p>
+                        Individual musical layers are prepared
+                        as separate stems.
+                    </p>
+
+                </section>
+
+            </div>
+
+
+            <div class="col-3 col-12-medium">
+
+                <section class="highlight">
+
+                    <h3>
+                        RTPC
+                    </h3>
+
+                    <p>
+                        Player movement controls
+                        the musical balance.
+                    </p>
+
+                </section>
+
+            </div>
+
+
+            <div class="col-3 col-12-medium">
+
+                <section class="highlight">
+
+                    <h3>
+                        Layering
+                    </h3>
+
+                    <p>
+                        Musical elements can fade in
+                        and out independently.
+                    </p>
+
+                </section>
+
+            </div>
+
+
+            <div class="col-3 col-12-medium">
+
+                <section class="highlight">
+
+                    <h3>
+                        Transitions
+                    </h3>
+
+                    <p>
+                        Changes occur continuously
+                        rather than through hard switches.
+                    </p>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Technical Overview -->
+<section class="wrapper style3">
+
+    <div class="title">
+        Technical Overview
+    </div>
+
+    <div class="container">
+
+        <header class="style1">
+
+            <h2>
+                Systems Explored
+            </h2>
+
+            <p>
+                A practical exploration of Wwise implementation inside Unreal Engine.
+            </p>
+
+        </header>
+
+
+        <div class="table-wrapper">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Area</th>
+                        <th>Implementation</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Spatial Audio</td>
+                        <td>3D positioning and spatial behavior</td>
+                    </tr>
+
+                    <tr>
+                        <td>Occlusion</td>
+                        <td>Obstruction between listener and sound sources</td>
+                    </tr>
+
+                    <tr>
+                        <td>Environment</td>
+                        <td>Localized 3D environmental soundscape</td>
+                    </tr>
+
+                    <tr>
+                        <td>Footsteps</td>
+                        <td>Surface-based dynamic audio</td>
+                    </tr>
+
+                    <tr>
+                        <td>Landing</td>
+                        <td>Character movement-based audio</td>
+                    </tr>
+
+                    <tr>
+                        <td>Interactive Music</td>
+                        <td>RTPC-driven vertical layering</td>
+                    </tr>
+
+                    <tr>
+                        <td>Middleware</td>
+                        <td>Wwise 2025.1</td>
+                    </tr>
+
+                    <tr>
+                        <td>Engine</td>
+                        <td>Unreal Engine 5.8.2</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <p>
+            This project provided a focused opportunity to explore Wwise
+            implementation within Unreal Engine and experiment with
+            different approaches to spatial audio, environmental sound,
+            character audio, and interactive music.
+        </p>
+
+
+        <!-- Navigation -->
+        <ul class="actions special">
+
+            <li>
+                <a
+                    href="implementation.html"
+                    class="button style2 large"
+                >
+                    Back to Implementation
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="index.html"
+                    class="button style1 large"
+                >
+                    Back to Home
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+<section id="footer" class="wrapper">
+
+    <div class="container">
+
+        <div id="copyright">
+
+            <ul>
+
+                <li>
+                    &copy; 2026 Fahed Zaher.
+                </li>
+
+                <li>
+                    Design:
+                    <a href="https://html5up.net">
+                        HTML5 UP
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>
