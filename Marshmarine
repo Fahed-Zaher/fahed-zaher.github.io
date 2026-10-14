@@ -1,0 +1,452 @@
+<!DOCTYPE HTML>
+<!--
+    Escape Velocity by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license
+-->
+<html>
+<head>
+    <title>Marshmarine — Case Study | Fahed Zaher</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+<div id="page-wrapper">
+
+    <!-- Header -->
+    <section id="header" class="wrapper case-study-header">
+
+        <div id="logo">
+            <h1><a href="index.html">FAHED ZAHER</a></h1>
+            <p>Game Audio · Sound Design · Music</p>
+        </div>
+
+        <!-- Navigation -->
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="implementation.html">Implementation</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="sound-design.html">Sound Design</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </section>
+
+
+    <!-- Case Study Header -->
+    <section class="wrapper style3">
+
+        <div class="title">Case Study</div>
+
+        <div class="container">
+
+            <header class="style1">
+                <h2>Marshmarine</h2>
+                <p>Gameplay Sound Design &amp; Interactive Audio Implementation</p>
+            </header>
+
+            <!-- Gameplay Reel Placeholder
+                 Replace this block with the YouTube iframe after uploading.
+            -->
+            <div style="
+                width:100%;
+                aspect-ratio:16/9;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                text-align:center;
+                background:#222;
+                color:#fff;
+                padding:2rem;
+                box-sizing:border-box;
+            ">
+                <div>
+                    <h3 style="color:#fff; margin-bottom:0.5rem;">
+                        Marshmarine — Gameplay Audio Reel
+                    </h3>
+                    <p style="margin:0;">Gameplay reel coming soon</p>
+                    <p style="font-size:0.9em; margin-top:0.75rem;">
+                        Video placeholder — YouTube link to be added.
+                    </p>
+                </div>
+            </div>
+
+            <!--
+            Once your video is uploaded, replace the placeholder above with:
+
+            <iframe
+                width="100%"
+                style="aspect-ratio:16/9; display:block;"
+                src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                title="Marshmarine — Gameplay Audio Reel"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                       gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+            -->
+
+            <p>
+                <strong>Marshmarine</strong> is a gameplay-focused audio project
+                built with Unreal Engine and Wwise. The project explores how
+                sound can respond to player actions, gameplay states, and
+                changing combat conditions.
+            </p>
+
+            <p>
+                My work covers custom sound design, recorded and processed
+                voice-over, dynamic mixing, and Blueprint-driven audio
+                implementation.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- Project Overview -->
+    <section class="wrapper style1">
+
+        <div class="title">Overview</div>
+
+        <div class="container">
+
+            <header class="style1">
+                <h2>Audio Built Around Gameplay</h2>
+                <p>
+                    Sound design and implementation working together to support
+                    feedback, atmosphere, and player awareness.
+                </p>
+            </header>
+
+            <div class="row">
+
+                <div class="col-4 col-12-medium">
+                    <section class="highlight">
+                        <h3>Combat Feedback</h3>
+                        <p>
+                            Weapon audio, surface impacts, and creature sounds
+                            reinforce player actions and combat encounters.
+                        </p>
+                    </section>
+                </div>
+
+                <div class="col-4 col-12-medium">
+                    <section class="highlight">
+                        <h3>Reactive Audio</h3>
+                        <p>
+                            RTPC-driven heartbeat and whispers, Wwise states,
+                            and gameplay-triggered cues respond to changing
+                            game conditions.
+                        </p>
+                    </section>
+                </div>
+
+                <div class="col-4 col-12-medium">
+                    <section class="highlight">
+                        <h3>Dynamic Mixing</h3>
+                        <p>
+                            Automatic ducking, playback randomization, and
+                            voice limiting help manage competing sounds
+                            and reduce repetition.
+                        </p>
+                    </section>
+                </div>
+
+            </div>
+
+            <p>
+                <strong>Engine:</strong> Unreal Engine 5.8.2
+                <br />
+                <strong>Audio Middleware:</strong> Wwise 2025.1
+                <br />
+                <strong>Implementation:</strong> Unreal Engine Blueprints
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- Combat and Creature Audio -->
+    <section class="wrapper style2">
+
+        <div class="title">Combat &amp; Creature Audio</div>
+
+        <div class="container">
+
+            <header class="style1">
+                <h2>Weapon, Impact &amp; Creature Sounds</h2>
+                <p>
+                    Audio events connected directly to actions in the game world.
+                </p>
+            </header>
+
+            <p>
+                Weapon audio was integrated with gameplay input, allowing the
+                automatic rifle sound to respond to sustained firing.
+                Additional impact sounds provide surface-specific feedback
+                when weapon fire hits rock surfaces.
+            </p>
+
+            <p>
+                The alien creature features a distinct audio identity,
+                including sharp claw footsteps and randomized attack sounds.
+                These events were integrated with the creature's animation
+                and gameplay logic in Unreal Engine.
+            </p>
+
+            <div class="row">
+
+                <div class="col-4 col-12-medium">
+                    <section class="highlight">
+                        <h3>Weapon Feedback</h3>
+                        <p>
+                            Weapon audio responds to player input to reinforce
+                            the feel and rhythm of firing.
+                        </p>
+                    </section>
+                </div>
+
+                <div class="col-4 col-12-medium">
+                    <section class="highlight">
+                        <h3>Surface Impacts</h3>
+                        <p>
+                            Rock impact sounds reinforce contact between
+                            weapon fire and the environment.
+                        </p>
+                    </section>
+                </div>
+
+                <div class="col-4 col-12-medium">
+                    <section class="highlight">
+                        <h3>Creature Audio</h3>
+                        <p>
+                            Claw footsteps and randomized attack sounds give
+                            the alien a more recognizable audio presence.
+                        </p>
+                    </section>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Reactive Audio -->
+    <section class="wrapper style3">
+
+        <div class="title">Reactive Audio</div>
+
+        <div class="container">
+
+            <header class="style1">
+                <h2>Low-Health Heartbeat &amp; Whispers</h2>
+                <p>
+                    Using an RTPC to make audio respond to the player's condition.
+                </p>
+            </header>
+
+            <p>
+                A Wwise RTPC controls a low-health audio response, introducing
+                a heartbeat and whispers as the player's health becomes
+                critical. This makes the player's condition audible rather
+                than relying exclusively on visual feedback.
+            </p>
+
+            <p>
+                The system connects gameplay data to an evolving audio
+                response, demonstrating how middleware parameters can drive
+                player-facing feedback.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- Voice-Over -->
+    <section class="wrapper style1">
+
+        <div class="title">Voice-Over</div>
+
+        <div class="container">
+
+            <header class="style1">
+                <h2>Character &amp; Commander VO</h2>
+                <p>
+                    Recording, processing, and integrating voice into gameplay.
+                </p>
+            </header>
+
+            <p>
+                I recorded my own voice for both the player character and
+                the commander, then processed and integrated the recordings
+                into the project.
+            </p>
+
+            <p>
+                The commander's post-death voice uses Wwise RTPC volume
+                control and time modulation to shape its playback behavior.
+                This combines voice processing with interactive implementation
+                to support the event in gameplay.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- Mixing and Wwise Systems -->
+    <section class="wrapper style2">
+
+        <div class="title">Mixing &amp; Wwise Systems</div>
+
+        <div class="container">
+
+            <header class="style1">
+                <h2>Managing a Responsive Game Mix</h2>
+                <p>
+                    Prioritizing important sounds and keeping repeated events
+                    under control.
+                </p>
+            </header>
+
+            <p>
+                Automatic ducking across multiple buses helps create space
+                for important audio events. Wwise states and effects shape
+                audio behavior, while voice limiting helps manage how many
+                sound instances can play simultaneously.
+            </p>
+
+            <p>
+                Randomization and playback probability settings help reduce
+                predictable repetition. These systems provide greater
+                variation while allowing more control over the behavior
+                of individual sound events.
+            </p>
+
+            <div class="row">
+
+                <div class="col-4 col-12-medium">
+                    <section class="highlight">
+                        <h3>Automatic Ducking</h3>
+                        <p>
+                            Bus-level ducking helps competing sounds share
+                            space in the mix.
+                        </p>
+                    </section>
+                </div>
+
+                <div class="col-4 col-12-medium">
+                    <section class="highlight">
+                        <h3>Randomization</h3>
+                        <p>
+                            Playback variation and probability settings
+                            help avoid overly repetitive sound events.
+                        </p>
+                    </section>
+                </div>
+
+                <div class="col-4 col-12-medium">
+                    <section class="highlight">
+                        <h3>Voice Limiting</h3>
+                        <p>
+                            Wwise voice management helps control concurrent
+                            playback when multiple events overlap.
+                        </p>
+                    </section>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Unreal Integration -->
+    <section class="wrapper style3">
+
+        <div class="title">Unreal Integration</div>
+
+        <div class="container">
+
+            <header class="style1">
+                <h2>Blueprint-Driven Audio Events</h2>
+                <p>
+                    Connecting audio behavior to the flow of gameplay.
+                </p>
+            </header>
+
+            <p>
+                Unreal Engine Blueprints were used to trigger and adjust
+                audio behavior around gameplay events. This includes
+                wave-start cues and out-of-bounds feedback, alongside
+                the logic needed to coordinate character, weapon, creature,
+                and other in-game audio.
+            </p>
+
+            <p>
+                Integrating Wwise with Blueprints made it possible to
+                iterate on event timing and behavior directly within
+                the game, keeping the audio connected to gameplay rather
+                than treating it as a separate layer.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- Navigation -->
+    <section class="wrapper">
+
+        <div class="container">
+
+            <ul class="actions special">
+                <li>
+                    <a href="implementation.html" class="button style2 large">
+                        Back to Implementation
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html" class="button style1 large">
+                        Back to Home
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <section id="footer" class="wrapper">
+
+        <div class="container">
+
+            <div id="copyright">
+                <ul>
+                    <li>&copy; 2026 Fahed Zaher.</li>
+                    <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+</div>
+
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
